@@ -1,0 +1,17 @@
+#carButtons {
+    display: inline-block;
+    width: 70%;
+    
+}
+
+#form {
+    float: right;
+    height: 100vh;
+    padding: 1rem;
+    
+}
+
+button {
+    margin: 0.5rem;
+}
+
