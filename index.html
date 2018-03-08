@@ -12,21 +12,40 @@
 
 <body>
 
-    <div id="carButtons">
+    <svg viewBox="0 0 4800 2400">
 
-    </div>
-    <div id="form">
-        <form id="car-form">
-            <label for="car-input">Add a car</label>
-            <input type="text" id="car-input">
-            <br>
-            <input type="submit" id="addCar" value="Submit">
-        </form>
-    </div>
-    <div id="cars">
+        <!-- Symbol -->
+        <symbol id="s-text">
+            <text text-anchor="middle" x="50%" y="50%" dy=".35em">
+                Welcome to Car Giphy Generator!
+            </text>
+        </symbol>
 
-    </div>
+        <!-- Duplicate symbols -->
+        <use xlink:href="#s-text" class="text"></use>
+        <use xlink:href="#s-text" class="text"></use>
+        <use xlink:href="#s-text" class="text"></use>
+        <use xlink:href="#s-text" class="text"></use>
+        <use xlink:href="#s-text" class="text"></use>
 
+    </svg>
+    <div class="container">
+        <div id="carButtons">
+
+        </div>
+        <div id="form">
+            <form id="car-form">
+                <label for="car-input">Add a car</label>
+                <input type="text" id="car-input">
+                <br>
+                <input type="submit" id="addCar" value="Submit">
+                <button id="clear">Clear Added</button>
+            </form>
+        </div>
+        <div id="cars">
+
+        </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src="./assets/javascript/app.js"></script>
